@@ -100,8 +100,5 @@ source $ZSH/oh-my-zsh.sh
 
 alias ll="ls -al"
 
-source /home/jd/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source $ZSH_CUSTOM/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-
 bindkey "^j" autosuggest-execute
 bindkey "^f" autosuggest-accept
