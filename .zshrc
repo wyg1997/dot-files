@@ -105,3 +105,6 @@ alias numd="ls -l | grep "^d" | wc -l"
 
 bindkey "^j" autosuggest-execute
 bindkey "^f" autosuggest-accept
+
+# Forbide tmux changing the title when use zsh
+DISABLE_AUTO_TITLE="false"
