@@ -21,13 +21,13 @@ if [ ! -n "${BULLETTRAIN_PROMPT_ORDER+1}" ]; then
     time
     status
     custom
-    context
+    # context
     dir
     screen
     perl
     ruby
     virtualenv
-    nvm
+    # nvm
     aws
     go
     rust
