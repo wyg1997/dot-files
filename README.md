@@ -50,11 +50,11 @@
 
 #### 相关文件
 
-- 放在`/etc/apt`目录下。
 - [sources.list](sources.list)
 
 #### 说明
 
+- 放在`/etc/apt`目录下。
 - 更换Ubuntu的源，加速apt国内下载
 
 ---
