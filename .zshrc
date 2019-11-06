@@ -102,6 +102,10 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 alias ll="ls -al"
+
+# tmux use color 256
+alias tmux="tmux -2"
+
 # Sumup the num of files or dirs                                                                                                                                                                            
 alias numf="ls -l | grep "^-" | wc -l"                                                                                                                                                                      
 alias numd="ls -l | grep "^d" | wc -l"
