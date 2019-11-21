@@ -67,6 +67,7 @@ ZSH_THEME="bullet-train"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
     git
+    z
     zsh-autosuggestions
     zsh-syntax-highlighting
 )
