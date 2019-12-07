@@ -103,6 +103,9 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# shell use vi mode
+set -o vi
+
 alias ll="ls -al"
 
 # tmux use color 256
