@@ -16,6 +16,7 @@
 - 大部分使用[原作者](https://github.com/gpakosz/.tmux)的配置，非常非常感谢!
 - 文件放在根目录`~`下。
 - 对tmux的前缀键、快捷键和界面做了修改和美化。
+- `.tmux.conf.local`最后几行会覆写`.tmux.conf`的一些配置，要注意一下。
 
 ---
 
