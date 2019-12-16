@@ -219,7 +219,7 @@ sudo systemctl start docker
 sudo systemctl enable docker
 
 yaourt -S nvidia-container --noconfirm # only #don't install nvidia-docker
-{\"registry-mirrors\": [\"https://docker.mirrors.ustc.edu.cn\"]}  /etc/docker/daemon.json # ?
+# {\"registry-mirrors\": [\"https://docker.mirrors.ustc.edu.cn\"]}  /etc/docker/daemon.json # ?
 
 
 sudo mkdir -p /etc/systemd/system/docker.service.d
@@ -270,7 +270,7 @@ echo Y | apt install sudo
 echo Y | apt install cmake
 apt-get install zsh git tmux vim wget mlocate cmake clang
 apt-get install language-pack-zh-hans
-https://blog.csdn.net/zhangchao19890805/article/details/52743380
+# https://blog.csdn.net/zhangchao19890805/article/details/52743380
 export LANG="zh_CN.UTF-8"
 export LC_ALL="zh_CN.UTF-8"
 echo Y | apt install mongodb
