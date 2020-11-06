@@ -88,3 +88,16 @@
 
 - manjaro相关配置命令。
 - **不建议**直接运行，直接在文件中找需要的命令执行即可。
+
+### alacritty
+
+#### 相关文件
+
+- [alacritty.yml](alacritty.yml)
+
+#### 说明
+
+- 文件放在`~/.config/alacritty/`目录下。
+- 在[flat\_remix主题](https://github.com/eendroroy/alacritty-theme/blob/master/themes/flat_remix.yml)的基础上微调。
+- 由于这个主题背景色比较浅，所以透明度设置为0.97比较高。
+
