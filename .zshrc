@@ -156,6 +156,5 @@ function upload {
     url=$(curl https://oshi.at -F f=@$1 | tail -1 | sed 's/DL: //')
     echo "url: $url"
     tmux set-buffer $url
-
 }
 
