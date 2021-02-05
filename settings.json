@@ -119,6 +119,12 @@
         // - "split": "auto" makes this pane open in the direction that provides the most surface area.
         // - "splitMode": "duplicate" makes the new pane use the focused pane's profile.
         // To learn more about panes, visit https://aka.ms/terminal-panes
-        { "command": { "action": "splitPane", "split": "auto", "splitMode": "duplicate" }, "keys": "alt+shift+d" }
+        { "command": { "action": "splitPane", "split": "auto", "splitMode": "duplicate" }, "keys": "alt+shift+d" },
+
+		// unbound alt+arrow keys
+        { "command": { "action": "unbound", "direction": "down" }, "keys": "alt+down" },
+		{ "command": { "action": "unbound", "direction": "left" }, "keys": "alt+left" },
+		{ "command": { "action": "unbound", "direction": "right" }, "keys": "alt+right" },
+		{ "command": { "action": "unbound", "direction": "up" }, "keys": "alt+up" }
     ]
 }

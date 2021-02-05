@@ -101,3 +101,15 @@
 - 在[flat\_remix主题](https://github.com/eendroroy/alacritty-theme/blob/master/themes/flat_remix.yml)的基础上微调。
 - 由于这个主题背景色比较浅，所以透明度设置为0.97比较高。
 
+### Windows Terminal
+
+#### 相关文件
+
+- [settings.json](settings.json)
+
+#### 说明
+
+- 用于替换Windows Terminal的配置文件
+- 内置了一个主题配色
+- profiles需要根据实际情况替换
+
