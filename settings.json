@@ -28,7 +28,7 @@
         "defaults":
         {
             // Put settings here that you want to apply to all profiles.
-            "fontFace": "Fira Code",
+            "fontFace": "MesloLGS NF",
             "colorScheme" : "wyg",
             "acrylicOpacity": 0.95,
             "useAcrylic":true,

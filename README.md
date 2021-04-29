@@ -42,13 +42,12 @@
 
 #### 相关文件
 
-- [bullet-train.zsh-theme](bullet-train.zsh-theme)
+- [.p10k.zsh](.p10k.zsh)
 
 #### 说明
 
-- 放在`${Oh-my-zsh}/themes`目录下。
-- 是zsh的一个主题，感谢原作者，[传送门](https://github.com/caiogondim/bullet-train.zsh)。
-- 关闭了`context`和`nvm`的显示(在文件的前几十行修改注释即可)。
+- oh-my-zsh的主题[powerlevel10k](https://github.com/romkatv/powerlevel10k)的配置文件。
+- 放在用户home目录下。
 
 ---
 
