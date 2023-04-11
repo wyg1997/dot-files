@@ -122,7 +122,7 @@ alias g++="g++ -std=c++11"
 # shell use vi mode
 set -o vi
 
-alias ll="ls -al"
+alias ll="ls -al -h"
 
 # tmux use color 256
 alias tmux="tmux -2"
