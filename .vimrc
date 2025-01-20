@@ -36,9 +36,6 @@ set noswapfile
 set nobackup
 set nowritebackup
 
-" 禁用会话文件
-set nosession
-
 " 对于较大的文件，禁用备份以提高性能
 autocmd BufReadPre * if getline(1) =~# '^\ufeff' | execute '1delete' | endif
 
