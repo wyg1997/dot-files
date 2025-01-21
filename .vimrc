@@ -152,3 +152,31 @@ autocmd InsertLeave * call HighlightCursorWord()
 " 定义高亮组的颜色
 highlight link CursorWord1 CursorLine
 highlight link CursorWord2 CursorLine
+
+" 设置 tabline
+set tabline=%!MyTabLine()
+function! MyTabLine()
+  let s = ''
+  let buflist = filter(range(1, bufnr('$')), 'buflisted(v:val)')
+  let buflist_len = len(buflist)
+  for i in buflist
+    let s .= '%#TabLine#'
+    if i == bufnr('%')
+      let s .= '>'
+    endif
+    let s .= ' %1* '
+    let s .= fnamemodify(bufname(i), ':t')
+    let s .= ' %*'
+    if i != buflist[buflist_len - 1]
+      let s .= '|'
+    endif
+  endfor
+  return s
+endfunction
+" 显示缓冲区标签
+set showtabline=2
+" 切换到下一个 buffer
+nnoremap <leader><tab> :bNext<CR>
+" 切换到上一个 buffer
+nnoremap <leader><S-tab> :bprevious<CR>
+
