@@ -1,5 +1,11 @@
+" 设置 leader 键
+let mapleader = ","
+
 " 打开语法高亮
 syntax on
+
+" 关闭自动换行
+set nowrap"
 
 " 显示行号
 set number
@@ -27,7 +33,19 @@ set listchars=tab:»\ ,trail:·
 set cursorline
 
 " 启用鼠标支持
-set mouse=a
+set mouse=
+" 定义切换鼠标模式的映射
+noremap <leader>m :call ToggleMouseMode()<CR>
+" 定义切换鼠标模式的函数
+function! ToggleMouseMode()
+    if &mouse == ""
+        set mouse=a
+        echo "mouse mode on"
+    else
+        set mouse=
+        echo "mouse mode off"
+    endif
+endfunction
 
 " 禁用交换文件
 set noswapfile
@@ -96,4 +114,13 @@ set fileencodings=utf-8,gb2312,gbk,gb18030
 
 " 设置终端编码为 UTF-8
 set termencoding=utf-8
+
+" 保存和恢复光标位置
+augroup RememberLastCursorLocation
+    autocmd!
+    " 保存光标位置（当文件被写入时）
+    autocmd BufWritePost * mkview
+    " 恢复光标位置（当进入文件时）
+    autocmd BufReadPost * silent! loadview
+augroup END
 
