@@ -127,3 +127,19 @@ augroup RememberLastCursorLocation
     autocmd BufReadPost * silent! loadview
 augroup END
 
+" 定义一个函数来高亮当前光标下的单词
+function! HighlightCursorWord()
+    let l:word = expand('<cword>')
+    if l:word != ''
+        execute 'match IncSearch /\V' . escape(l:word, '/\~') . '/'
+    else
+        match none
+    endif
+endfunction
+
+" 在正常模式下移动光标时调用该函数
+autocmd CursorMoved * call HighlightCursorWord()
+
+" 确保在进入正常模式时也调用该函数
+autocmd InsertLeave * call HighlightCursorWord()
+
