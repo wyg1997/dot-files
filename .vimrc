@@ -19,6 +19,7 @@ set smartindent
 
 " 设置制表符为4个空格
 set tabstop=4
+set softtabstop=4
 set shiftwidth=4
 set expandtab
 
@@ -131,9 +132,14 @@ augroup END
 function! HighlightCursorWord()
     let l:word = expand('<cword>')
     if l:word != ''
-        execute 'match IncSearch /\V' . escape(l:word, '/\~') . '/'
+        " 高亮当前光标下的单词
+        execute 'match CursorWord1 /\V' . escape(l:word, '/\~') . '/'
+
+        " 高亮其他位置的单词
+        execute '2match CursorWord2 /\V' . escape(l:word, '/\~') . '/'
     else
         match none
+        2match none
     endif
 endfunction
 
@@ -143,3 +149,6 @@ autocmd CursorMoved * call HighlightCursorWord()
 " 确保在进入正常模式时也调用该函数
 autocmd InsertLeave * call HighlightCursorWord()
 
+" 定义高亮组的颜色
+highlight link CursorWord1 CursorLine
+highlight link CursorWord2 CursorLine
