@@ -1,6 +1,9 @@
 " 设置 leader 键
 let mapleader = ","
 
+" 设置颜色主题
+color pablo
+
 " 打开语法高亮
 syntax on
 
